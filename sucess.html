@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <header> <h1 class="text-6xl mt-8 text-center">  Baper <span class="text-emerald-300 font-semibold">Taka</span></h1></header>
+
+
+   <!-- Balence and diposite -->
+   <main class="container mx-auto">
+    <Section class=" text-4xl text-white  mt-16 font-semibold  ">
+        <div class="grid grid-cols-3 gap-4  w-3/4 container mx-auto">
+            <div class="bg-orange-600 rounded  p-8">
+                <h3>Deposite</h3>
+                <h4>$<span id="Deposite-update">00</span> </h4>
+            </div>
+            <div class="bg-teal-600 rounded  p-8">
+                <h3>Balence</h3>
+                <h4>$<span id="Balence-update">100</span></h4>
+            </div>
+            <div class="bg-purple-600 rounded  p-8">
+                <h3>Withdrow</h3>
+                <h4>$<span id="Withdraw-update">00</span></h4>
+            </div>
+           
+        </div>
+    </Section>
+    <!-- Diposite and Withdrow -->
+
+    <section>
+        
+            <div class="mt-8 grid grid-cols-2 gap-4">
+
+            <div class="bg-pink-200 rounded container mx-auto p-8 "> 
+            <h2 class="text-2xl mb-4"> Deposite Your Bapka money</h2>
+            <input id="Deposite-input" class="block w-3/4  rounded mb-4" type="text" placeholder="Diposite Amount">
+        
+            <button id="Deposite-btn" type="button" class=" py-2 bg-orange-600 text-white font-semibold rounded px-2 font-medium ">Deposite</button>
+            </div>
+            <div class="bg-pink-200 rounded container mx-auto p-8 "> 
+            <h2 class="text-2xl mb-4">Withdrow Your Bapka money</h2>
+            <input id="Withdrow-input" class="block w-3/4  rounded mb-4" type="text" placeholder="Diposite Amount">
+        
+            <button id="Withdrow-btn" type="button" class="bg-purple-600 text-white font-semibold rounded px-2 py-2 font-medium ">Withdrow</button>
+            </div>
+        </div>
+    </section>
+
+
+
+   </main>
+
+
+
+<script src="banking.js"></script>
+</body>
+</html>
